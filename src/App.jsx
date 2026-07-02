@@ -11,7 +11,7 @@ import { doomsdayDefeat } from "./doomsdayDefeat.jsx";
 export default function App()
 {
 
-    const [currWord, setCurrWord] = React.useState(() => words[Math.floor(Math.random() * words.length)].toUpperCase().toUpperCase());
+    const [currWord, setCurrWord] = React.useState(() => words[Math.floor(Math.random() * words.length)].toUpperCase());
     const [userGuess, setUserGuess] = React.useState([]);
     const wrongGuess = userGuess.reduce((value, letter) => 
                                     {
